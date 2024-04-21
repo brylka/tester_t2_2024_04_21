@@ -11,5 +11,12 @@ class TestKalkulator(unittest.TestCase):
         self.assertEqual(-10, self.kalkulator.dodaj(10,-20))
         self.assertEqual(-10, self.kalkulator.dodaj(-10,0))
 
+    def test_odejmowania(self):
+        self.assertEqual(10, self.kalkulator.odejmij(-10,-20))
+        self.assertEqual(-10, self.kalkulator.odejmij(10,20))
+        self.assertEqual(-30, self.kalkulator.odejmij(-10,20))
+        self.assertEqual(-10, self.kalkulator.odejmij(-10,0))
+
+
 if __name__ == '__main__':
     unittest.main()

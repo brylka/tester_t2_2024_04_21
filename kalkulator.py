@@ -5,7 +5,7 @@ class Kalkulator:
         c = a + b
         return c
     def odejmij(self, a, b):
-        pass
+        return a - b
 
     def pomnoz(self, a, b):
         pass
