@@ -12,6 +12,7 @@ class Kalkulator:
 
     def podziel(self, a, b):
         if b == 0:
-            return "Nie dzieli się przez zero!"
+            raise ValueError("Nie dzieli się przez zero!!!!")
+            #return "Nie dzieli się przez zero!"
         return a / b
 

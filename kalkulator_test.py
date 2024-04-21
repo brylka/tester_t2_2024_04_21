@@ -30,8 +30,9 @@ class TestKalkulator(unittest.TestCase):
         self.assertEqual(0, self.kalkulator.podziel(0,2))
 
     def test_dzielenia_przez_zero(self):
-        self.assertEqual("Nie dzieli się przez zero!", self.kalkulator.podziel(4,0))
-
+        #self.assertEqual("Nie dzieli się przez zero!", self.kalkulator.podziel(4,0))
+        with self.assertRaises(ValueError):
+            self.kalkulator.podziel(4,0)
 
 if __name__ == '__main__':
     unittest.main()
