@@ -5,11 +5,11 @@ class Book:
         self.year = year
     def get_info(self):
         pass
-    def change_title(self):
+    def change_title(self, new_title):
         pass
-    def change_author(self):
+    def change_author(self, new_author):
         pass
-    def change_year(self):
+    def change_year(self, new_year):
         pass
 
 #book = Book("Wiedzmin", "Sapkowski", 1997)
