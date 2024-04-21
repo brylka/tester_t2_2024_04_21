@@ -23,6 +23,15 @@ class TestKalkulator(unittest.TestCase):
         self.assertEqual(-6,self.kalkulator.pomnoz(2,-3))
         self.assertEqual(0,self.kalkulator.pomnoz(2,0))
 
+    def test_dzielenia(self):
+        self.assertEqual(1.5, self.kalkulator.podziel(3,2))
+        self.assertEqual(2, self.kalkulator.podziel(-4,-2))
+        self.assertEqual(-2.5, self.kalkulator.podziel(-5,2))
+        self.assertEqual(0, self.kalkulator.podziel(0,2))
+
+    def test_dzielenia_przez_zero(self):
+        self.assertEqual("Nie dzieli się przez zero!", self.kalkulator.podziel(4,0))
+
 
 if __name__ == '__main__':
     unittest.main()
