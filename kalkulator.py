@@ -1,4 +1,11 @@
 class Kalkulator:
     def dodaj(self, a, b):
-        pass
+        a += 1
+        b -= 1
+        #
+        #
+        #
+
+        c = a + b
+        return c
 
