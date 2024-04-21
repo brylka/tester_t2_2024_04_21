@@ -8,7 +8,7 @@ class Kalkulator:
         return a - b
 
     def pomnoz(self, a, b):
-        pass
+        return a * b
 
     def podziel(self, a, b):
         pass
