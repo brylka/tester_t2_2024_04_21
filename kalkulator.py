@@ -15,4 +15,3 @@ class Kalkulator:
             raise ValueError("Nie dzieli się przez zero!!!!")
             #return "Nie dzieli się przez zero!"
         return a / b
-
