@@ -6,8 +6,10 @@ class TestKalkulator(unittest.TestCase):
         self.kalkulator = Kalkulator()
 
     def test_dodawania(self):
-        wynik = self.kalkulator.dodaj(10,20)
-        self.assertEqual(30, wynik)
+        self.assertEqual(30, self.kalkulator.dodaj(10,20))
+        self.assertEqual(-177, self.kalkulator.dodaj(-123,-54))
+        self.assertEqual(-10, self.kalkulator.dodaj(10,-20))
+        self.assertEqual(-10, self.kalkulator.dodaj(-10,0))
 
 if __name__ == '__main__':
     unittest.main()
