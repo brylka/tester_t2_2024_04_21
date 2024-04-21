@@ -14,4 +14,5 @@ class Kalkulator:
         if b == 0:
             return "Nie dzieli się przez zero!"
         return a / b
+        return 0
 
