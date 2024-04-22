@@ -4,13 +4,15 @@ class Book:
         self.author = author
         self.year = year
     def get_info(self):
-        pass
+        return f"Tytuł: {self.title} Autor: {self.author} Rok: {self.year}"
     def change_title(self, new_title):
-        pass
+        self.title = new_title
     def change_author(self, new_author):
-        pass
+        self.author = new_author
     def change_year(self, new_year):
-        pass
+        self.year = new_year
 
-#book = Book("Wiedzmin", "Sapkowski", 1997)
-#print(book.year)
+book = Book("Wiedzmin", "Sapkowski", 1997)
+print(book.year)
+book2 = Book("Wiedzmin", "Sapkowski", 2000)
+print(book2.year)
