@@ -12,7 +12,7 @@ class Book:
     def change_year(self, new_year):
         self.year = new_year
 
-book = Book("Wiedzmin", "Sapkowski", 1997)
-print(book.year)
-book2 = Book("Wiedzmin", "Sapkowski", 2000)
-print(book2.year)
+#book = Book("Wiedzmin", "Sapkowski", 1997)
+#print(book.year)
+#book2 = Book("Wiedzmin", "Sapkowski", 2000)
+#print(book2.year)
